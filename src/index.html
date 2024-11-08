@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/output.css" />
+    <title>Yummy</title>
+  </head>
+  <body class="">
+    <nav id="mainNav" class="flex fixed z-50">
+      <div
+        id="navbarItems"
+        class="bg-black py-10 px-7 flex flex-col justify-between"
+      >
+        <ul id="searchList" class="text-white hidden">
+          <li id="searchBtn" class="icon-nav"><a href=""></a>Search</li>
+          <li id="categoriesBtn" class="icon-nav"><a href=""></a>Categories</li>
+          <li id="areaBtn" class="icon-nav"><a href=""></a>Area</li>
+          <li id="ingredientsBtn" class="icon-nav">
+            <a href=""></a>Ingredients
+          </li>
+          <li id="contactBtn" class="icon-nav"><a href=""></a>Contact Us</li>
+        </ul>
+        <div class="footer-sec p-2">
+          <i class="text-white fs-5 fa-brands fa-facebook"></i>
+          <i class="text-white fs-5 fa-brands fa-twitter"></i>
+          <i class="text-white fs-5 fa-solid fa-globe"></i>
+          <p class="text-white">
+            Copyright Â© 2019 All Rights <br />
+            Reserved
+          </p>
+        </div>
+      </div>
+      <div
+        id="navbar"
+        class="h-[100vh] w-[70px] bg-white z-10 flex justify-around items-center flex-col"
+      >
+        <img
+          src="https://routeegy.github.io/YummyExam/imgs/logo.png"
+          class="w-[100%] p-2"
+          alt=""
+        />
+        <i
+          class="open-btn fa-solid open-close-icon fa-align-justify fa-2x cursor-pointer"
+        ></i>
+        <i
+          class="close-btn fa-solid fa-x fa-align-justify fa-2x hidden cursor-pointer"
+        ></i>
+        <i class="fa-solid fa-globe fa-xl block"></i>
+      </div>
+    </nav>
+    <div id="searchBar" class="search-bar bg-black"></div>
+    <main id="foodContent"></main>
+
+    <div
+      id="loader"
+      class="d-none loader fixed top-0 bottom-0 [left:0] [right:0] bg-black/90 z-50 justify-center items-center"
+    >
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
